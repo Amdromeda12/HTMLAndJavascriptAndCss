@@ -1,0 +1,101 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: lightseagreen;
+}
+
+.grid-container {
+  display: grid;
+  height: 100vh; /* 100% of the viewport height */
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-rows: 1fr 1fr;    /* Two equal rows */
+  position: relative;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  height: 32px;
+  width: 250px;
+  border: none;
+  background-color: lightcoral;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: LightBlue;
+}
+
+#b1 {
+    transform: rotate(-45deg)
+}
+
+#b3 {
+    transform: rotate(45deg)
+}
+
+#b2 {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 98px;
+  background-color: transparent;
+  border: none;
+  padding: 0; /* No padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#b2but:hover path {
+  fill: LightBlue;
+}
+
+.no-select {
+  user-select: none;
+}
+
+
+#b2 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.stack-panel {
+    grid-column: 2 / 3;  /* Place in second column */
+    grid-row: 1 / 3;     /* Span both rows */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px;
+}
+
+.game-button{
+    width: 100%;
+    background-color: aqua;
+    color: black;
+    height: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.game-button:hover {
+  background-color: LightBlue;
+}
