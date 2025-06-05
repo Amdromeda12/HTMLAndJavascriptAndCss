@@ -19,8 +19,6 @@ function newButtonEvent(){
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 const rotatebutton = document.getElementById('b2but') // SPIN BUTTON
 
-rotatebutton.addEventListener("click", Rotate) 
-
 /*function Rotate(){
     const button1 = document.getElementById('b1')
     const button3 = document.getElementById('b3')
@@ -33,6 +31,8 @@ rotatebutton.addEventListener("click", Rotate)
 }   
     */
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+rotatebutton.addEventListener("click", Rotate)
 
 function Rotate(){
     const button1 = document.getElementById('b1');
