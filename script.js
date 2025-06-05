@@ -21,7 +21,7 @@ const rotatebutton = document.getElementById('b2but') // SPIN BUTTON
 
 rotatebutton.addEventListener("click", Rotate) 
 
-function Rotate(){
+/*function Rotate(){
     const button1 = document.getElementById('b1')
     const button3 = document.getElementById('b3')
 
@@ -31,6 +31,22 @@ function Rotate(){
     button1.style.transform = `rotate(${currentRotation1 + 45}deg)`;
     button3.style.transform = `rotate(${currentRotation3 - 45}deg)`;
 }   
+    */
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+function Rotate(){
+    const button1 = document.getElementById('b1');
+    const button3 = document.getElementById('b3');
 
+    let rot1 = parseInt(button1.dataset.rotation);
+    let rot3 = parseInt(button3.dataset.rotation);
+
+    rot1 += 45;
+    rot3 -= 45;
+
+    button1.dataset.rotation = rot1;
+    button3.dataset.rotation = rot3;
+
+    button1.style.transform = `rotate(${rot1}deg)`;
+    button3.style.transform = `rotate(${rot3}deg)`;
+}   

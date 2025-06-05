@@ -38,11 +38,11 @@ button:hover {
 }
 
 #b1 {
-    transform: rotate(-45deg)
+  transform: rotate(45deg)
 }
 
 #b3 {
-    transform: rotate(45deg)
+  transform: rotate(-45deg)
 }
 
 #b2 {
